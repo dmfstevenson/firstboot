@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo
-echo -n "We are about to rock n roll, are you ready? (Y/n)"
+echo -n "We are about to rock n roll, are you ready? (Y/n):"
 read CONFIRM
 echo
 #read -p "Press ENTER to coninue"
