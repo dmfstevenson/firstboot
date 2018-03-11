@@ -27,7 +27,7 @@ fi
 
 echo
 echo "Installing packages as determined by Dane..."
-	apt install -y vim htop python-pip git google-chrome-stable steam caffeine-f
+	apt install -y vim htop python-pip git google-chrome-stable steam caffeine -f
 	pip install awscli --upgrade --user
 
 echo
