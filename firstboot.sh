@@ -17,7 +17,6 @@ echo "Testing internet connection"
 ping -c 1 -w 3 au.archive.ubuntu.com
 if [ $? ] ; then
 	echo "Updating packages"
-	add-apt-repository multiverse
 	echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' >> /etc/apt/sources.list
 	apt-get update
 	apt-get dist-upgrade
