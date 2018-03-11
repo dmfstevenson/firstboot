@@ -17,7 +17,7 @@ echo "Testing internet connection"
 ping -c 1 -w 3 au.archive.ubuntu.com
 if [ $? ] ; then
 	echo "Updating packages"
-#	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A56C344B46B232CB
+	add-apt-repository multiverse
 	echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' >> /etc/apt/sources.list
 	apt-get update
 	apt-get dist-upgrade
@@ -28,7 +28,7 @@ fi
 
 echo
 echo "Installing packages as determined by Dane..."
-	apt install -y vim python-pip git google-chrome-stable -f
+	apt install -y vim htop python-pip git google-chrome-stable steam -f
 	pip install awscli --upgrade --user
 
 echo
