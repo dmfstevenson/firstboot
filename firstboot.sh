@@ -4,7 +4,6 @@ echo
 echo -n "We are about to rock n roll, are you ready? (Y/n):"
 read CONFIRM
 echo
-#read -p "Press ENTER to coninue"
 
 if [ -z $CONFIRM ] || [ $CONFIRM != "Y" ] ; then
 	echo "Quitting!"
@@ -32,4 +31,3 @@ echo "Installing packages as determined by Dane..."
 
 echo
 echo "All done.  Now go get 'em tiger"
-
