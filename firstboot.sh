@@ -2,14 +2,14 @@
 
 echo
 echo -n "We are about to rock n roll, are you ready?"
-#read CONFIRM
-echo
-read -p "Press ENTER to coninue"
+read CONFIRM
+#echo
+#read -p "Press ENTER to coninue"
 
-#if [ -z $CONFIRM ] || [ $CONFIRM != "Y" ] ; then
-#	echo "Quitting!"
-#	exit 1
-#fi
+if [ -z $CONFIRM ] || [ $CONFIRM != "n" ] ; then
+	echo "Quitting!"
+	exit 1
+fi
 
 # Update all packages
 
