@@ -1,12 +1,12 @@
 #!/bin/bash
 
 echo
-echo -n "We are about to rock n roll, are you ready?"
+echo -n "We are about to rock n roll, are you ready? (Y/n)"
 read CONFIRM
-#echo
+echo
 #read -p "Press ENTER to coninue"
 
-if [ -z $CONFIRM ] || [ $CONFIRM != "n" ] ; then
+if [ -z $CONFIRM ] || [ $CONFIRM != "Y" ] ; then
 	echo "Quitting!"
 	exit 1
 fi
